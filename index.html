@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header container">
-      <div class="logo-wrapper">
+      <div class="header-logo-wrapper">
       <a class="logo-link">
         <img class="logo" src="img/logo.svg" alt="Логотип Device">
       </a>
@@ -59,8 +59,8 @@
     </div>
     </header>
     
-    <main class="page-main container">
-      <section class="galery">
+    <main class="page-main">
+      <section class="galery container">
         <div class="gallery-image-wrapper">
           
           <img class="gallery-image" src="img/slider-1.png" alt="Изображение девайса"> 
@@ -102,19 +102,19 @@
             </ol>
         </div>
 
-          <dl class="characteristics_list">
-            <div class="characteristics_item">
-              <dt class="characteristics_title"> Дальность полета</dt>
-              <dd class="characteristics_defenition">800 м</dd>
+          <dl class="characteristics-list">
+            <div class="characteristics-item">
+              <dt class="characteristics-title"> Дальность полета</dt>
+              <dd class="characteristics-defenition">800 м</dd>
             </div>
-            <div class="characteristics_item">
-              <dt class="characteristics_title"> Радиус поражения</dt>
-              <dd class="characteristics_defenition">50 м</dd>
+            <div class="characteristics-item">
+              <dt class="characteristics-title"> Радиус поражения</dt>
+              <dd class="characteristics-defenition">50 м</dd>
             </div>
           </dl>
       </div> <!--galery-wrapper-->
       </section>
-      <section class="accessories">
+      <section class="accessories container">
         <ul class="accessories-list">
           <li class="accessories-item accessories-item-virtual-reality">
             
@@ -143,24 +143,27 @@
        </ul>
       </section>
       <section class="delivery">
-        <ul class="additional-menu">
-          <li class="additional-menu-item">
-            <a class="additional-menu-link additional-menu-link-current">Доставка</a>
-          </li>
-          <li class="additional-menu-item">
-            <a class="additional-menu-link">Гарантия</a>
-          </li>
-          <li class="additional-menu-item">
-            <a class="additional-menu-link">Кредит</a>
-          </li>
-        </ul>
-        
-        <div class="delivery-wrapper">
-          <h2 class="delivery-title">Доставка</h2>
-          <p class="delivery-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
+        <div class="delivery-inner container">
+          <ul class="additional-menu">
+            <li class="additional-menu-item">
+              <a class="additional-menu-link additional-menu-link-current">Доставка</a>
+            </li>
+            <li class="additional-menu-item">
+              <a class="additional-menu-link">Гарантия</a>
+            </li>
+            <li class="additional-menu-item">
+              <a class="additional-menu-link">Кредит</a>
+            </li>
+          </ul>
+          
+          <div class="delivery-wrapper">
+            <h2 class="delivery-title">Доставка</h2>
+            <p class="delivery-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+       </div>
         </section>
-        <div class="delivery-promo">
+
+        <section class="delivery-promo container">
           
             <div class="delivery-promo-image">
 
@@ -171,9 +174,9 @@
             </div>
        
           
-        </div>
+        </section>
       
-      <div class="about-wrapper">
+      <div class="about-wrapper container">
         <section class="about">
           <h2 class="about-title">О нас</h2>
           <p class="about-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -211,24 +214,62 @@
       </div><!--about-wrapper-->
 
       <section class="subscribe">
-        <div class="subscribe-wrapper">
-          <h2 class="subscribe-title">Подпишитесь
-            на рассылку</h2>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
-              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <div class="container">
+          <div class="subscribe-wrapper">
+            <h2 class="subscribe-title">Подпишитесь
+              на рассылку</h2>
+              <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
+                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="newsletter-wrapper">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              </p>
+              <button class="newsletter-button" type="submit">            Подписаться
+              </button>
+            </form>
+            <p class="newsletter-text">Это бесплатно</p>
         </div>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          </p>
-          <button class="newsletter-button" type="submit">            Подписаться
-          </button>
-        </form>
+      </div>
       </section>
       
     </main>
     <footer class="page-footer">
+      <div class="container">
+        <div class="footer-logo-wrapper">
+          <a class="logo-link">
+            <img class="logo" src="img/logo-footer.svg" alt="Логотип Device">
+          </a>
+        </div>
+        <div class="footer-wrapper">
+          <address class="footer-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            
+          </address>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link">Доставка</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link">Гарантия</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link">Кредит</a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        </div>
+        <div class="footer-inner">
+          <div class="strip"></div>
+          <a class="htmlacademy-link">
+            <img src="img/htmlacademy.svg" alt="htmlacademy">
+          </a>
+
+        </div>
+
+      </div>
     </footer>
   </body>
 </html>
