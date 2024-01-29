@@ -55,13 +55,11 @@ a {
 }
 /*Header*/
 
-.page-header {
-    margin-top: 27px;
-    position: relative;
-}
 
 .header-logo-wrapper {
     background: linear-gradient(#fff 50%, #FFE17F 50%);
+    padding-left: 60px;
+    
 }
 .search-form {
     font-family: "Rubik", sans-serif;
@@ -85,14 +83,21 @@ a {
    background: transparent;
 }
 
-.header-wrapper {
+.header-color-wrapper {
     color: #000000;
     text-decoration: none;
+    
+    background: #FFE17F;
+    
+    
+    
+}
+.header-wrapper {
     display: flex;
     flex-wrap: wrap;
-    background: #FFE17F;
-    padding-top: 40px;
-    
+    width: 1040px;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 .icons-wrapper {
     font-family: "Rubik", sans-serif;
@@ -133,7 +138,8 @@ a {
     grid-template-columns: 629px 1fr;
     padding-top: 45px;
     padding-bottom: 107px;
-    background: #FFE17F;
+    width: 1040px;
+    margin: 0 auto;
 }
 .catalog-link {
     font-family: "Raleway", sans-serif;
@@ -254,10 +260,16 @@ a {
     background-color: #000;
 }
 .characteristics-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 400px;
+    display: flex;
+    flex-wrap: wrap; 
+   
+}
+.characteristics-item {
+    margin-right: 20px;
+    width: 150px;
+}
+.characteristics-item:last-child {
+margin-right: 0;
 }
 .characteristics-title {
     font-family: "Rubik", sans-serif;
@@ -630,6 +642,7 @@ a {
     display: grid;
     grid-template-columns: 234px 1fr 180px;
     gap: 117px;
+    margin-bottom: 64px;
 }
 .footer-address-text {
     margin: 0;
@@ -661,6 +674,12 @@ a {
     text-decoration: underline;
 }
 
+.footer-inner {
+    display: flex;
+    align-items: center;
+    
+   
+}
 .strip {
     content: "";
     width: 80px;
@@ -670,4 +689,40 @@ a {
     background-image: url(../img/strip.svg);
     margin-right: 16px;
     display: inline-block;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+   margin-left: auto;
+   margin-right: auto; 
+   max-width: 600px;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.footer-social-link {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border-radius: 50%;
+}
+.footer-social-fb {
+    background-image: url(../img/facebook.svg);
+}
+.footer-social-instagram {
+    background-image: url(../img/instagram.svg);
+}
+.footer-social-tw {
+    background-image: url(../img/twitter.svg);
 }
