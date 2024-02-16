@@ -59,6 +59,7 @@ a {
 .header-logo-wrapper {
     background: linear-gradient(#fff 50%, #FFE17F 50%);
     padding-left: 60px;
+    padding-top: 10px;
     
 }
 .search-form {
@@ -69,6 +70,7 @@ a {
     display: grid;
     grid-template-columns: 359px 158px;
     margin-right: 25px;
+    margin-top: -5px;
 }
 .searsh-input {
     border-radius: 10px 0 0 10px;
@@ -106,7 +108,7 @@ a {
     line-height: 30px;
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 12px;
+    gap: 13px;
     align-items: center;
     position: relative;
 }
@@ -115,7 +117,7 @@ a {
     display: flex;
 }
 .icons-compare-wrapper {
-    margin-right: 18px;
+    margin-right: 40px;
 
 }
 .icon-button-counter {
@@ -136,7 +138,7 @@ a {
 .header-navigation-wrapper {
     display: grid;
     grid-template-columns: 629px 1fr;
-    padding-top: 45px;
+    padding-top: 30px;
     padding-bottom: 107px;
     width: 1040px;
     margin: 0 auto;
