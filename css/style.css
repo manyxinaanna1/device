@@ -50,7 +50,7 @@ a {
     line-height: 21px;
     text-transform: uppercase;
     width: 210px;
-    background: linear-gradient(to bottom, #fff 33%, #FFE17F 33% 66%, #fff 66% 99%);
+    background: linear-gradient(to bottom, transparent 33%, #FFE17F 33% 66%, transparent 66% 99%);
     text-align: center;
 }
 /*Header*/
@@ -727,4 +727,165 @@ margin-right: 0;
 }
 .footer-social-tw {
     background-image: url(../img/twitter.svg);
+}
+
+
+/* Catalog */
+.catalog-products {
+    background-color: #F0F0F0;
+}
+.inner-header {
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+.inner-header-wrapper {
+    margin-left: 60px;
+}
+.inner-header-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    list-style-type: none;
+}
+.breadcrumbs-item {
+    position: relative;
+    margin-right: 36px;
+    list-style-type: none;
+}
+.breadcrumbs-item::after {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    width: 8px;
+    height: 8px;
+    background-image: url(../img/arrow-breadcrumbs.svg);
+    background-repeat: no-repeat;
+    content: "";
+}
+  
+.breadcrumbs-item:last-child::after {
+    content: none;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 33px;
+    background-color: #000000;
+    
+}
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #DCDCDC;
+}
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #F0F0F0;
+    border: 2px solid #000000
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggle-min {
+    top: -8px;
+    left: -10px;
+  }
+  
+.toggle-max {
+    top: -8px;
+    right: -10px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: center;
+}
+  
+.catalog-filter-label {
+    display: flex;
+    margin-right: 5px;
+}
+  
+.range-input {
+    width: 30px;
+    padding: 0 2px;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+}
+  
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+  
+.range-toggle:hover {
+    background-color: #DBB590;
+}
+  
+.range-toggle:active,
+.range-toggle:focus {
+    outline: 3px solid #DBB590;
+} 
+.catalog-filter-group {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    border: none;
+}
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #242424;
+}
+.control:hover .control-mark {
+    border-color: #cccccc;
+}
+.control:active .control-mark {
+    border-color: #cccccc;
+}
+  
+.control-input:disabled + .control-mark {
+    border-color: #ffffff;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+}
+  
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
 }
