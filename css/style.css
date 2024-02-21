@@ -733,6 +733,13 @@ margin-right: 0;
 /* Catalog */
 .catalog-products {
     background-color: #F0F0F0;
+
+}
+.catalog-products-wrapper {
+    display: flex;
+}
+.catalog-left-column {
+    width: 320px;
 }
 .inner-header {
     background-color: #ffffff;
@@ -777,7 +784,31 @@ margin-right: 0;
 .breadcrumbs-item:last-child::after {
     content: none;
 }
-
+.catalog-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 60px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.catalog-filter-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+.control-label {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
 .range-scale {
     position: relative;
     height: 4px;
@@ -795,7 +826,7 @@ margin-right: 0;
     width: 20px;
     height: 20px;
     background: #F0F0F0;
-    border: 2px solid #000000
+    border: 2px solid #000000;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -836,13 +867,15 @@ margin-right: 0;
 }
   
 .range-toggle:hover {
-    background-color: #DBB590;
+    background-color: #EBEBEB;
 }
   
-.range-toggle:active,
-.range-toggle:focus {
-    outline: 3px solid #DBB590;
+.range-toggle:active {
+    background-color: #000000;
 } 
+.range-toggle:focus {
+    outline: 2px solid #AF4FFF;
+}
 .catalog-filter-group {
     margin: 0;
     margin-bottom: 35px;
@@ -888,4 +921,58 @@ margin-right: 0;
   
 .control-input[type="checkbox"]:checked + .control-mark::after {
     transform: rotate(-45deg);
+}
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    content: "";
+}
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.catalog-right-column {
+    width: 840px;
+}
+/*sorting-container*/
+.sorting-container {
+    display: flex;
+}
+
+.card-grid-toggle-wrapper {
+    margin-left: auto;
+}
+.catalog-title-sorting {
+    margin-right: 197px;
+}
+/*product-list*/
+.product-list {
+    margin: 0;
+   
+    padding: 0;
+    padding-top: 70px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-color-wrapper {
+    background-color: #FFFFFF;
+}
+.product-card {
+    width: 360px;
+    margin-left: 40px;
 }
