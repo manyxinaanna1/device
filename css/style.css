@@ -66,21 +66,31 @@ a {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
     display: grid;
     grid-template-columns: 359px 158px;
     margin-right: 25px;
     margin-top: -5px;
 }
 .searsh-input {
-    border-radius: 10px 0 0 10px;
-    padding: 10px 48px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 16px 0 0 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 45px;
     background: transparent;
    
 }
 
 .search-button {
-    border-radius: 0 10px 10px 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 0 16px 16px 0;
    display: inline-block;
    background: transparent;
 }
@@ -137,9 +147,9 @@ a {
 
 .header-navigation-wrapper {
     display: grid;
-    grid-template-columns: 629px 1fr;
+    grid-template-columns: 570px 1fr;
     padding-top: 30px;
-    padding-bottom: 107px;
+    padding-bottom: 130px;
     width: 1040px;
     margin: 0 auto;
 }
@@ -153,6 +163,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 293px;
+    letter-spacing: 0.1em;
 }
 
 .navigation-list {
@@ -171,32 +182,36 @@ a {
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
+    letter-spacing: 0.1em;;
 }
 
 
 /*Galery*/
 .galery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 560px 1fr;
     gap: 40px;
-    margin-top: -80px;
+    margin-top: -65px;
     z-index: 1;
     position: relative;
 }
 .gallery-image-wrapper {
     position: relative;
+    margin-top: -75px;
+    width: 560px;
     
     
 }
 .gallery-image {
     display: block;
     position: relative;
-    margin-top: -50px;
+    
     z-index: 1;
 }
+
 .slider-controls {
     position: absolute;
-    top: 50%;
+    top: 245px;
     width: 100%;
     transform: translateY(-50%);
     display: flex;
@@ -219,8 +234,9 @@ a {
 .promo-text {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 50px;
+    margin-bottom: 29px;
 }
 .gallery-paragraph {
     font-family: "Rubik", sans-serif;
@@ -228,6 +244,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     color: #444;
+    margin-bottom: 61px;
 }
 .galery-link-wrapper {
     display: grid;
