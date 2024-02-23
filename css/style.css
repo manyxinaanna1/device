@@ -607,7 +607,7 @@ margin-right: 0;
     
     margin: 0;
   }
-.field {
+.newsletter-email-field {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -1014,4 +1014,44 @@ margin-right: 0;
     color: #444444;
     font-size: 18px;
     line-height: 21px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.9);
+}
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 72px 80px 82px 80px;
+    background-color: #FFFFFF;
+    border: 10px solid #000000;
+}
+.modal-delivery {
+    width: 920px;
+}
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 84px;
+    right: 80px;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+.modal-title {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
 }
