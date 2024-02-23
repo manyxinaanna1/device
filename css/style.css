@@ -999,12 +999,16 @@ margin-right: 0;
     width: 360px;
     margin-left: 40px;
 }
+.product-card-title-link {
+    text-decoration: none;
+}
 .product-card-title {
     color: #000000;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    
 }
 .product-card-price {
     color: #444444;
