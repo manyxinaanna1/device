@@ -764,6 +764,7 @@ margin-right: 0;
 }
 .catalog-left-column {
     width: 320px;
+    padding: 0 60px;
 }
 .inner-header {
     background-color: #ffffff;
@@ -873,7 +874,7 @@ margin-right: 0;
 }
   
 .catalog-filter-label {
-    font: 15px;
+    font-size: 15px;
     line-height: 18px;
     color: #000000;
     opacity: 0.3;
@@ -881,7 +882,7 @@ margin-right: 0;
 
 
 .range-input {
-    width: 30px;
+    width: 50px;
     padding: 0 2px;
     font: inherit;
     text-align: center;
@@ -1002,6 +1003,8 @@ margin-right: 0;
 }
 .products-color-wrapper {
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 .product-card {
     width: 360px;
@@ -1066,6 +1069,7 @@ margin-right: 0;
 
 
 .modal-container {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -1073,6 +1077,9 @@ margin-right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(240, 240, 240, 0.9);
+    z-index: 10;
+    box-sizing: border-box;
+    display: none;
 }
 .modal {
     position: relative;
@@ -1126,7 +1133,11 @@ margin-right: 0;
     display: grid;
     grid-template-columns: 360px 360px;
     gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     margin-bottom: 40px;
+
 }
 .auth-form-label {
     font-weight: 700;
@@ -1136,6 +1147,9 @@ margin-right: 0;
     margin-bottom: 14px;
 }
 .auth-form-bottom {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 540px 180px;
     gap: 40px;
@@ -1147,12 +1161,9 @@ margin-right: 0;
     grid-template-columns: 60px 60px 60px;
     min-width: 60px;
 }
-.number-button-minus {
-    grid-column: 1 / 2;
-}
+
 .number-input {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+
     padding: 0 50px;
     text-align: center;
     appearance: textfield;
@@ -1160,7 +1171,6 @@ margin-right: 0;
 .number-button {
     position: relative;
     z-index: 1;
-    grid-row: 1 / 2;
     display: grid;
     place-content: center;
     background-color: transparent;
