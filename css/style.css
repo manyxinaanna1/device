@@ -1083,6 +1083,9 @@ margin-right: 0;
     box-sizing: border-box;
    
 }
+.modal-container-closed {
+    display: none;
+}
 .modal {
     position: relative;
     margin: auto;
