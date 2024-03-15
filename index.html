@@ -303,26 +303,35 @@
             <ul class="auth-form-top">
               <li class="field-group">
                 <label class="auth-form-label" for="appointment-name">Ваше имя:</label>
-                <input class="auth-form-field field" type="text" id="appointment-name" name="appointment-name" placeholder="Введите имя">
+                <input class="auth-form-field auth-form-field-padding" type="text" id="appointment-name" name="appointment-name" placeholder="Введите имя">
+                <svg class="field-icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="#B3B3B3"/>
+                </svg>
+                  
               </li>
               <li class="field-group">
                 <label class="auth-form-label" for="email">Ваш e-mail:</label>
-                <input class="auth-form-field auth-form-field-error field" type="email" id="email" name="email" placeholder="почта">
+                <input class="auth-form-field auth-form-field-padding auth-form-field-error" type="email" id="email" name="email" placeholder="почта">
+                <svg class="field-icon" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z" fill="#B3B3B3"/>
+                </svg>
                 <span class="field-message field-message-error">Забавный у вас адрес</span>
               </li>
             </ul>
             <ul class="auth-form-bottom">
               <li class="field-group">
                 <label class="auth-form-label" for="product">Что нужно привезти:</label>
-                <input class="auth-form-field field" type="text" id="product" name="product" placeholder="В свободной форме">
+                <input class="auth-form-field auth-form-field-padding" type="text" id="product" name="product" placeholder="В свободной форме">
               </li>
               <li class="field-group">
                 <label class="auth-form-label" for="quantity">Количество:</label>
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
                 <div class="field-number number">
                   <button class="number-button number-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="auth-form-field field" type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" step="1">
+                  <input class="auth-form-field" type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" step="1">
                   <button class="number-button number-button-plus" type="button">
                       <span class="visually-hidden">Увеличить количество</span>
                   </button>
@@ -330,6 +339,7 @@
                 
               </li>
             </ul>
+            <button class="button" type="button"> Отправить          </button>
           </form>
         </section>
       </div>
