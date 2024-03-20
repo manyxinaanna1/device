@@ -1112,11 +1112,12 @@ margin-right: 0;
     letter-spacing: 0.2em;
     box-sizing: border-box;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .pagination {
     background: #EBEBEB;
     padding: 25px 0;
-    margin: 69px auto 103px auto;
+    margin-bottom: 78px;
     list-style-type: none;
     display: flex;
     width: 760px;
@@ -1124,7 +1125,7 @@ margin-right: 0;
     
 }
 .paginattion-item-number:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .pagination-link {
@@ -1142,6 +1143,12 @@ margin-right: 0;
     letter-spacing: 0.2em;
     color: #000000;
     text-transform: uppercase;
+}
+.pagination-prev {
+    margin-left: 25px;
+}
+.pagination-next {
+    margin-right: 25px;
 }
 .pagination-number {
     display: flex;
