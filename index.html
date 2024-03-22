@@ -19,21 +19,22 @@
           <input class="searsh-input" name="searsh" placeholder="Текст поиска" type="search">
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <div class="icon-enter-wrapper icons-wrapper">
-            <img class="enter-image" src="img/enter-image.svg" width="14" height="13" alt="Иконка войти">
+        <ul class="icons-list">
+          <li class="icon-item">
             <a class="enter" href="#"> Войти</a>
-          </div>
-          <div class="compare-backet-wrapper">
-            <div class="icons-compare-wrapper icons-wrapper">
-              <img class="compare-image" src="img/compare-image.svg" width="10" height="13" alt="Иконка Сравнить">
+          </li>
+         
+          
+            <li class="icon-item icon-compare">
+              
               <a class="compare" href="#"> Сравнить</a>
-            </div>
-            <div class="icons-wrapper">
+            </li>
+            <li class="icon-item icon-basket">
               <span class="icon-button-counter">2</span>
-              <img class="basket-image" src="img/basket-image.svg" width="16" height="15"  alt="Иконка Корзина">
+              
               <a class="basket-link" href="#"> Корзина</a>
-            </div>
-          </div>
+            </li>
+          </ul>
       </div>
       
     </div>
@@ -62,59 +63,65 @@
       </div>
     </header>
     
-    <main class="page-main">
+    <main class="page-main page-main-index">
+      
       <section class="galery container">
-        <div class="gallery-image-wrapper">
-          
-          <img class="gallery-image" width="560" height="560" src="img/slider-1.png" alt="Изображение девайса"> 
-          <div class="slider-controls">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее изображение</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее изображение</span>
-            </button>
+        <div class="header-color-wrapper">
+          <p class="galery-number">01</p>
         </div>
-      </div>
-        <div class="galery-wrapper">
-          <h1 class="visually-hidden">Сайт Device</h1>
-          
-          <p class="promo-text">Порхает как  бабочка, жалит как пчела! </p>
-          <p class="gallery-paragraph"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <div class="galery-link-wrapper">
-            <a class="button" href="#">Подробнее</a>
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
-              </li>
-              
-            </ol>
+        <div class="galery-grid-wrapper">
+          <div class="gallery-image-wrapper">
+            
+            <img class="gallery-image" width="560" height="560" src="img/slider-1.png" alt="Изображение девайса"> 
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее изображение</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее изображение</span>
+              </button>
+          </div>
         </div>
+          <div class="galery-wrapper">
+            <h1 class="visually-hidden">Сайт Device</h1>
+            
+            <p class="promo-text">Порхает как  бабочка, жалит как пчела! </p>
+            <p class="gallery-paragraph"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <div class="galery-link-wrapper">
+              <a class="button" href="#">Подробнее</a>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+                
+              </ol>
+          </div>
 
-          <dl class="characteristics-list">
-            <div class="characteristics-item">
-              <dt class="characteristics-title"> Дальность полета</dt>
-              <dd class="characteristics-defenition">800 м</dd>
-            </div>
-            <div class="characteristics-item">
-              <dt class="characteristics-title"> Радиус поражения</dt>
-              <dd class="characteristics-defenition">50 м</dd>
-            </div>
-          </dl>
-      </div> <!--galery-wrapper-->
+            <dl class="characteristics-list">
+              <div class="characteristics-item">
+                <dt class="characteristics-title"> Дальность полета</dt>
+                <dd class="characteristics-defenition">800 м</dd>
+              </div>
+              <div class="characteristics-item">
+                <dt class="characteristics-title"> Радиус поражения</dt>
+                <dd class="characteristics-defenition">50 м</dd>
+              </div>
+            </dl>
+        </div> <!--galery-wrapper-->
+      </div>
       </section>
       <section class="accessories container">
         <ul class="accessories-list">
@@ -226,10 +233,10 @@
           </div>
           <div class="newsletter-wrapper">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="newsletter-email">
-                <span class="visually-hidden" for="newsletter-email">Email</span>
-                <input class="newsletter-email-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-              </p>
+              
+                    <label class="visually-hidden" for="newsletter-email">Email</label>
+                    <input class="newsletter-email-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              
               <button class="newsletter-button" type="submit">            Подписаться
               </button>
             </form>
@@ -332,7 +339,7 @@
                   <button class="number-button number-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="auth-form-field" type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" step="1">
+                  <input class="auth-form-field auth-form-field-center" type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" step="1">
                   <button class="number-button number-button-plus" type="button">
                       <span class="visually-hidden">Увеличить количество</span>
                   </button>

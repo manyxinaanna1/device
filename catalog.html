@@ -19,21 +19,25 @@
           <input class="searsh-input" name="searsh" placeholder="Текст поиска" type="search">
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <div class="icon-enter-wrapper icons-wrapper">
-            <img class="enter-image" src="img/enter-image.svg" width="14" height="13" alt="Иконка войти">
-            <a class="enter" href="#"> Войти</a>
-          </div>
-          <div class="compare-backet-wrapper">
-            <div class="icons-compare-wrapper icons-wrapper">
-              <img class="compare-image" src="img/compare-image.svg" width="10" height="13" alt="Иконка Сравнить">
+        <ul class="icons-list">
+          <li class="icon-item">
+            <a class="enter" href="#"> Коля Петухов</a>
+          </li>
+          <li class="icon-item">
+            <a class="exit" href="#"> Выйти</a>
+          </li>
+         
+          
+            <li class="icon-item icon-compare">
+              
               <a class="compare" href="#"> Сравнить</a>
-            </div>
-            <div class="icons-wrapper">
+            </li>
+            <li class="icon-item icon-basket">
               <span class="icon-button-counter">2</span>
-              <img class="basket-image" src="img/basket-image.svg" width="16" height="15"  alt="Иконка Корзина">
+              
               <a class="basket-link" href="#"> Корзина</a>
-            </div>
-          </div>
+            </li>
+          </ul>
       </div>
       
     </div>
@@ -85,7 +89,8 @@
                   
                   <h2 class="catalog-title catalog-title-filter">фильтр:</h3>
                   <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                      <fieldset class="catalog-filter-group">
+                    
+                    <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-subtitle">Стоимость</legend>
           
                       <div class="range">
