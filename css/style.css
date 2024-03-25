@@ -62,6 +62,21 @@
     border: none;
     letter-spacing: 0.2em;
 }
+.button:hover {
+    background: #FFE17F;
+    padding: 10px 20px;
+}
+.button:active {
+    background: #FFCC33;
+    padding: 10px 20px;
+}
+.button:focus {
+    outline: 2px solid #AF4FFF;
+    padding: 10px 20px;
+}
+.button:disabled {
+    opacity: 0.3;
+}
 /*Header*/
 
 .logo {
@@ -176,10 +191,20 @@
     text-decoration: none;
     display: flex;
 }
-.exit {
-    color: #000000;
-    opacity: 0.3;
-    text-decoration: none;
+.enter:hover, 
+.compare:hover,
+.basket-link:hover {
+    opacity: 0.7;
+}
+.enter:active, 
+.compare:active,
+.basket-link:active {
+    opacity: 0.5
+}
+.enter:focus, 
+.compare:focus,
+.basket-link:focuse {
+    outline: 2px solid #AF4FFF;
 }
 .icon-button-counter {
     position: absolute;
@@ -1040,27 +1065,24 @@ margin-right: 0;
 .control:active .control-mark {
     border-color: #cccccc;
 }
+.control-input {
+    appearance: none;
+}
   
 .control-input:disabled + .control-mark {
     border-color: #ffffff;
 }
-.control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 7px;
-  left: 2px;
-  width: 12px;
-  height: 2px;
-  background-color: #000000;
+  width: 10px;
+  height: 10px;
+  background: url('../img/check-mark.svg');
+  background-repeat: no-repeat;
   content: "";
 }
-.control-input[type="checkbox"]:checked + .control-mark::before {
-    transform: rotate(45deg);
-}
+
   
-.control-input[type="checkbox"]:checked + .control-mark::after {
-    transform: rotate(-45deg);
-}
+
 .control-input[type="radio"] + .control-mark {
     border-radius: 50%;
 }
@@ -1143,10 +1165,15 @@ margin-right: 0;
 }
 .product-card {
     width: 360px;
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "title price";
     
 }
 .product-card-image {
     display: block;
+    grid-area: image;
 }
 .product-card-title-link {
     text-decoration: none;
@@ -1157,12 +1184,17 @@ margin-right: 0;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    grid-area: title;
     
 }
 .product-card-price {
     color: #444444;
     font-size: 18px;
     line-height: 21px;
+    grid-area: price;
+    grid-template-rows: 206px;
+    grid-template-columns: 226px 1fr;
+    gap: 32px;
 }
 
 /*Pagination*/
@@ -1178,6 +1210,9 @@ margin-right: 0;
     box-sizing: border-box;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+.pagination-button:hover {
+
 }
 .pagination {
     background: #EBEBEB;
