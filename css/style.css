@@ -272,6 +272,10 @@
     color: #ffffff;
     width: 320px;
 }
+.popover-content {
+    display: flex;
+    flex-direction: column;
+}
 .popover-container {
     width: 280px;
     margin: 0 auto;
@@ -283,7 +287,7 @@
 }
 .popover-item {
     display: grid;
-    grid-template-columns: 39px 155px 10px;
+    grid-template-columns: 39px 155px;
     
     gap: 23px;
     align-items: center;
@@ -1488,4 +1492,14 @@ margin-right: 0;
     background-image: url("../img/info.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+.info:hover{
+    content: "Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.";
+    display: block;
+    width: 200px;
+    min-height: 160px;
+    z-index: 1;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 19px;
 }
