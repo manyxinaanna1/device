@@ -259,6 +259,7 @@
 }
 
 .header-navigation-wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 570px 1fr;
     width: 1040px;
@@ -268,23 +269,49 @@
 }
 
 .catalog {
-    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color:#FFE17F;
+
+}
+.catalog-image-wrapper {
+    position: relative;
+    border: 1px solid  #000000;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .catalog-image {
-     width: 15px;
-     height: 5px;
-     color: #000000;
-     display: block;
+    
+    width: 16px;
+    height: 4px;
+    background-color: #000000;
+    display: block;
+}
+
+.catalog-image::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 16px;
+    width: 4px;
+    height: 16px;
+    background-color: #000000;
+    display: block;
 }
 
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 55px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.catalog-item {
+    margin-bottom: 20px;
 }
 
 .navigation-list {
@@ -298,10 +325,11 @@
 }
 
 .catalog-button {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 293px;
+    width: 275px;
     padding: 0;
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 800;
@@ -339,11 +367,27 @@
 /*Popover*/
 .popover-basket {
     position: absolute;
+    z-index: 2;
     top: 30px;
     right: -30px;
     background-color: #000000;
     color: #ffffff;
     width: 320px;
+
+}
+
+.popover-list::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    
+    display: block;
+    top: -5px;
+    left: 50%;
+    transform: rotate(45deg);
+    background-color: #000000;
 }
 
 .popover-basket-closed {
@@ -1685,11 +1729,34 @@
     background-position: center;
 }
 
-.info:focus-within{
-    content: "";
+
+.info-hover {
+    
+    position: absolute;
+    z-index: 11;
+    width: 220px;
+    height: 166px;
+    
     display: block;
-    z-index: 1;
+    top: 35px;
+    left: -155px;
     color: #ffffff;
     background-color: #000000;
+    text-align: left;
     padding: 19px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.info-hover:before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    
+    display: block;
+    top: -5px;
+    left: 75%;
+    transform: rotate(45deg);
+    background-color: #000000;
 }
