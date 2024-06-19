@@ -271,11 +271,20 @@
 .catalog {
     position: absolute;
     z-index: 1;
+    display: none;
     top: 100px;
     left: 0;
     background-color:#FFE17F;
-
 }
+
+.catalog-menu:focus-within .catalog-image-wrapper .catalog-image::after{
+    display: none;
+}
+
+.catalog-menu:focus-within .catalog {
+    display: block;
+}
+
 .catalog-image-wrapper {
     position: relative;
     border: 1px solid  #000000;
@@ -674,12 +683,12 @@
 
 
 .accessories-link {
+    width: 160px;
+    padding-top: 32px;
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    width: 160px;
-    padding-top: 32px;
     color: #000000;
     text-decoration: none;
 }
@@ -1694,27 +1703,35 @@
 
 .number-button {
     position: relative;
-    z-index: 1;
+    width: 60px;
+    height: 55px;
     display: grid;
     place-content: center;
     border: none;
 }
 
-.number-button::after {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
+
+.number-button-minus-span,
+.number-button-plus-span {
+    position: relative;
+    width: 16px;
+    height: 4px;
+    background-color: #000000;
+    display: block;
+}
+.number-button-plus-span:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 6px;
+    width: 4px;
+    height: 16px;
+    background-color: #000000;
+    display: block;
 }
 
-.number-button-minus::after {
-    background-image: url(../img/minus.svg);
-}
 
-.number-button-plus::after {
-    background-image: url(../img/plus.svg);
-}
 
 .info {
     position: absolute;
@@ -1733,10 +1750,11 @@
     
     position: absolute;
     z-index: 11;
+    display: none;
     width: 220px;
     height: 166px;
     
-    display: block;
+   
     top: 35px;
     left: -155px;
     color: #ffffff;
@@ -1746,6 +1764,11 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+.info:focus-within .info-hover {
+    display: block;
+}
+
 .info-hover:before {
     content: '';
     position: absolute;

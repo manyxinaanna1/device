@@ -80,13 +80,14 @@
     
     <div class="header-color-wrapper">
       <div class="header-navigation-wrapper">
-          <button class="catalog-button catalog-button-closed">
-            <span>Каталог товаров</span>
+        <ul class="navigation-list">
+          <li class="catalog-menu">
+            <button class="catalog-button catalog-button-closed">
+            Каталог товаров
             <div class="catalog-image-wrapper">
               <span class="catalog-image"></span>
             </div>
-           
-          </button>
+           </button>
           <div class="catalog">
             <ul class="catalog-list">
               <div>
@@ -115,6 +116,8 @@
             </div>
             </ul>
           </div>
+        </li>
+      </ul>
           
           
         
@@ -203,7 +206,7 @@
           </li>
           <li class="accessories-item accessories-item-monopod">
            
-            <a class="accessories-link" href="#"> Моноподы для селфи</a>
+            <a class="accessories-link" href="#"> Моноподы<br> для селфи</a>
           </li>
           <li class="accessories-item accessories-item-action">
            
@@ -414,10 +417,15 @@
                 <div class="field-number number">
                   <button class="number-button number-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
+                    <span class="number-button-minus-span"></span>
                   </button>
                   <input class="auth-form-field auth-form-field-center" type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" step="1">
                   <button class="number-button number-button-plus" type="button">
+                    
                       <span class="visually-hidden">Увеличить количество</span>
+                      <span class="number-button-plus-span"></span>
+                   
+                      
                   </button>
                   </div>
                 
