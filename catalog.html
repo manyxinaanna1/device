@@ -36,7 +36,7 @@
             <li class="icon-item icon-basket">
               <span class="icon-button-counter">2</span>
               
-              <button class="basket-link" href="#"> Корзина</button>
+              <button class="basket-link" type="button"> Корзина</button>
               <div class="popover popover-basket popover-basket-closed">
                 <div class="popover-content">
                   
@@ -45,14 +45,14 @@
                       <li class="popover-item">
                         <img src="img/product-1-small.png" width="39" height="43" alt="Любительская селфи-палка">
                         <a class="popover-title">Любительская селфи-палка</a>
-                        <button class="popover-close-button">
+                        <button class="popover-close-button" type="button">
                           <span class="visually-hidden">Закрыть</span>
                         </button>
                       </li>
                       <li class="popover-item">
                         <img src="img/product-2-small.png" width="39" height="43" alt="Профессиональная селфи-палка">
                         <a class="popover-title">Профессиональная селфи-палка</a>
-                        <button class="popover-close-button">
+                        <button class="popover-close-button" type="button">
                           <span class="visually-hidden">Закрыть</span>
                         </button>
                       </li>
@@ -67,7 +67,7 @@
                     </div>
                   </div>
                   <div class="popower-button-wrapper">
-                    <button class="popover-button">Открыть корзину</button>
+                    <button class="popover-button" type="button">Открыть корзину</button>
                   </div>
                    
                   
@@ -83,38 +83,38 @@
       <div class="header-navigation-wrapper">
         <ul class="navigation-list">
           <li class="catalog-menu">
-            <button class="catalog-button catalog-button-closed">
+            <button class="catalog-button catalog-button-closed" type="button">
             Каталог товаров
-            <div class="catalog-image-wrapper">
+            <span class="catalog-image-wrapper">
               <span class="catalog-image"></span>
-            </div>
+            </span>
            </button>
           <div class="catalog">
             <ul class="catalog-list">
-              <div>
+              <li>
                 <li class="catalog-item">
-                <a class="catalog-link" href="#">Виртуальная реальность </a>
+                  <a class="catalog-link" href="#">Виртуальная реальность </a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Экшн-камеры</a>
+                </li>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Экшн-камеры</a>
-              </li>
-              </div>
-              <div>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Фитнес-браслеты </a>
-              </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Умные часы</a>
-              </li>
-            </div>
-            <div>
+              <li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Фитнес-браслеты </a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Умные часы</a>
+                </li>
+            </li>
+            <li>
               <li class="catalog-item">
                 <a class="catalog-link" href="#">Квадрокоптеры</a>
               </li>
-            </div>
+            </li>
             </ul>
           </div>
         </li>
@@ -162,7 +162,7 @@
             <div class="catalog-products-wrapper container">
               <div class="catalog-left-column">
                   
-                  <h2 class="catalog-title catalog-title-filter">фильтр:</h3>
+                  <h2 class="catalog-title catalog-title-filter">фильтр:</h2>
                   <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     
                     <fieldset class="catalog-filter-group">
@@ -171,10 +171,10 @@
                       <div class="range">
                           <div class="range-scale">
                           <div class="range-bar" style="width: 110px">
-                              <button class="range-toggle toggle-min">
+                              <button class="range-toggle toggle-min" type="button">
                               <span class="visually-hidden">Изменить минимальную цену.</span>
                               </button>
-                              <button class="range-toggle toggle-max">
+                              <button class="range-toggle toggle-max" type="button">
                               <span class="visually-hidden">Изменить максимальную цену.</span>
                               </button>
                           </div>
@@ -261,7 +261,7 @@
               
               <!-- Сортировка -->
               <div class="sorting-container">
-                <h2 class="catalog-title catalog-title-sorting">сортировка:</h3>
+                <h2 class="catalog-title catalog-title-sorting">сортировка:</h2>
                 <form class="sorting-type">
                   <div class="select">
                     <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -274,18 +274,18 @@
                   <button class="visually-hidden" type="submit">Отсортировать продукты</button>
                 </form>
                 <div class="card-grid-toggle-wrapper">
-                  <a class="card-grid-toggle" href="#" type="button">
+                  <button class="card-grid-toggle" href="#" type="button">
                     <span class="visually-hidden">Отсортировать от большего к меньшему</span>
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 0L11.5 10H0.5" fill="black"/>
                       </svg>
-                  </a>
-                  <a  class="card-grid-toggle card-grid-toggle-current" href="#" type="button">
+                  </button>
+                  <button class="card-grid-toggle card-grid-toggle-current" href="#" type="button">
                     <span class="visually-hidden">Отсортировать от меньшего к большему</span>
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
                       </svg>
-                  </a>
+                  </button>
               </div>
             </div>
   
@@ -294,46 +294,37 @@
                 <div class="products-margin-wrapper">
                   <ul class="product-list">
                     <li class="product-card">
-                      
+                      <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                     
-                      <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
+                        <span class="product-card-price">500 ₽</span>
+                        <button class="product-card-button" type="button">Подробнее</button>
                       </a>
-                      <span class="product-card-price">500 ₽</span>
-                      <a class="button product-card-button">Подробнее</a>
                     </li>
                     <li class="product-card">
-                     
+                      <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-3.jpg" width="360" height="380" alt="Профессиональная селфи-палка»">
-                     
-                      <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                        <span class="product-card-price">1 500 ₽</span>
+                        <button class="product-card-button" type="button">Подробнее</button>
                       </a>
-                      <span class="product-card-price">1 500 ₽</span>
-                      <a class="button product-card-button">Подробнее</a>
                     </li>
                     <li class="product-card">
-                      
+                      <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-4.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                     
-                      <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                        <span class="product-card-price">2 500 ₽</span>
+                        <button class="product-card-button" type="button">Подробнее</button>
                       </a>
-                      <span class="product-card-price">2 500 ₽</span>
-                      <a class="button product-card-button">Подробнее</a>
                     </li>
                     <li class="product-card">
-                      
-                        <img class="product-card-image" src="img/product-5.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                     
                       <a class="product-card-title-link" href="#">
+                        <img class="product-card-image" src="img/product-5.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                        <span class="product-card-price">1 500 ₽</span>
+                        <button class="product-card-button" type="button">Подробнее</button>
                       </a>
-                      <span class="product-card-price">1 500 ₽</span>
-                      <a class="button product-card-button">Подробнее</a>
                     </li>
-                  
                   </ul>
                   <button class="pagination-button" type="button">Загрузить ещё</button>
                 
@@ -341,10 +332,12 @@
                 <!-- Пагинация -->
                 
                     <ul class="pagination">
-                      <li class="pagination-item">
-                        <a class="pagination-link pagination-prev" href="#"> Назад </a>
+                      <li>
+                        <li class="pagination-item">
+                          <a class="pagination-link pagination-prev" href="#"> Назад </a>
+                        </li>
                       </li>
-                      <div class="pagination-number">
+                       <li class="pagination-number">
                         <li class="pagination-item paginattion-item-number">
                           <a class="pagination-link" href="#">1</a>
                         </li>
@@ -360,9 +353,11 @@
                         <li class="pagination-item paginattion-item-number">
                           <a class="pagination-link" href="#">15</a>
                         </li>
-                      </div>
-                      <li class="pagination-item pagination-item-next">
-                        <a class="pagination-link pagination-next" href="#"> Вперёд </a>
+                      </li>
+                      <li>
+                        <li class="pagination-item pagination-item-next">
+                          <a class="pagination-link pagination-next" href="#"> Вперёд </a>
+                        </li>
                       </li>
                     </ul>
                 </div><!--products-margin-wrapper-->
@@ -426,6 +421,5 @@
 
       </div>
     </footer>
-  </body>
   </body>
 </html>

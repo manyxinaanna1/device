@@ -35,7 +35,7 @@
             <li class="icon-item icon-basket">
               <span class="icon-button-counter">2</span>
               
-              <button class="basket-link" href="#"> Корзина</button>
+              <button class="basket-link" type="button"> Корзина</button>
               <div class="popover popover-basket popover-basket-closed">
                 <div class="popover-content">
                   
@@ -44,14 +44,14 @@
                       <li class="popover-item">
                         <img src="img/product-1-small.png" width="39" height="43" alt="Любительская селфи-палка">
                         <a class="popover-title">Любительская селфи-палка</a>
-                        <button class="popover-close-button">
+                        <button class="popover-close-button" type="button">
                           <span class="visually-hidden">Закрыть</span>
                         </button>
                       </li>
                       <li class="popover-item">
                         <img src="img/product-2-small.png" width="39" height="43" alt="Профессиональная селфи-палка">
                         <a class="popover-title">Профессиональная селфи-палка</a>
-                        <button class="popover-close-button">
+                        <button class="popover-close-button" type="button">
                           <span class="visually-hidden">Закрыть</span>
                         </button>
                       </li>
@@ -66,7 +66,7 @@
                     </div>
                   </div>
                   <div class="popower-button-wrapper">
-                    <button class="popover-button">Открыть корзину</button>
+                    <button class="popover-button" type="button">Открыть корзину</button>
                   </div>
                    
                   
@@ -82,38 +82,38 @@
       <div class="header-navigation-wrapper">
         <ul class="navigation-list">
           <li class="catalog-menu">
-            <button class="catalog-button catalog-button-closed">
+            <button class="catalog-button catalog-button-closed" type="button">
             Каталог товаров
-            <div class="catalog-image-wrapper">
+            <span class="catalog-image-wrapper">
               <span class="catalog-image"></span>
-            </div>
+            </span>
            </button>
           <div class="catalog">
             <ul class="catalog-list">
-              <div>
+              <li>
                 <li class="catalog-item">
-                <a class="catalog-link" href="#">Виртуальная реальность </a>
+                  <a class="catalog-link" href="#">Виртуальная реальность </a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Экшн-камеры</a>
+                </li>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Экшн-камеры</a>
-              </li>
-              </div>
-              <div>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Фитнес-браслеты </a>
-              </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Умные часы</a>
-              </li>
-            </div>
-            <div>
+              <li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Фитнес-браслеты </a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Умные часы</a>
+                </li>
+            </li>
+            <li>
               <li class="catalog-item">
                 <a class="catalog-link" href="#">Квадрокоптеры</a>
               </li>
-            </div>
+            </li>
             </ul>
           </div>
         </li>
@@ -309,6 +309,7 @@
       </div>
       </section>
       <section class="accessories container">
+        <h2 class="visually-hidden">Списог аксессуаров</h2>
         <ul class="accessories-list">
           <li class="accessories-item accessories-item-virtual-reality">
             
@@ -368,6 +369,7 @@
         </section>
 
         <section class="delivery-promo container">
+          <h2 class="visually-hidden">О доставке товаров</h2>
           
             <div class="delivery-promo-image">
 
@@ -434,8 +436,7 @@
                     <label class="visually-hidden" for="newsletter-email">Email</label>
                     <input class="newsletter-email-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               
-              <button class="newsletter-button" type="submit">            Подписаться
-              </button>
+              <button class="newsletter-button" type="submit"> Подписаться </button>
             </form>
             <p class="newsletter-text">Это бесплатно</p>
         </div>
@@ -499,7 +500,7 @@
     </footer>
     <div class="modal-container modal-closed">
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -551,7 +552,7 @@
                 
               </li>
             </ul>
-            <button class="button" type="button"> Отправить          </button>
+            <button class="button" type="button"> Отправить </button>
           </form>
         </section>
       </div>
