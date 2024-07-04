@@ -623,6 +623,7 @@
     display: flex;
     flex-wrap: wrap; 
     gap: 10px;
+    align-items: flex-start;
     margin-top: 59px;
     margin-bottom: 36px;
     padding: 0;
@@ -637,18 +638,21 @@
 }
 
 .characteristics-title {
+    margin: 0;
     margin-top: 12px;
     width: 150px;
     font-size: 16px;
     line-height: 30px;
+    word-wrap: break-word;
 }
 
 .characteristics-defenition {
     margin-left: 0;
-    width: 150px;
+    width: 160px;
     font-size: 36px;
     line-height: 30px;
     color: #444;
+    word-wrap: break-word;
 }
 
 /*Accessories*/
@@ -715,6 +719,7 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: -0.5px;;
     color: #000000;
     text-decoration: none;
 }
@@ -1556,8 +1561,8 @@
     letter-spacing: 0.2em;
 }
 
-.product-card-title-link:hover .product-card-button,
-.product-card-title-link:active .product-card-button{
+.product-card-title-link:hover + .product-card-button,
+.product-card-title-link:active + .product-card-button{
     display: block;
 }
 
