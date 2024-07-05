@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
    
   </head>
@@ -81,28 +82,34 @@
             <div class="catalog">
               <ul class="catalog-list">
                 <li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Виртуальная реальность </a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Экшн-камеры</a>
-                  </li>
+                  <ul class="catalog-list-wrapper">
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Виртуальная реальность </a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Моноподы для cелфи</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Фитнес-браслеты </a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Умные часы</a>
-                  </li>
+                  <ul class="catalog-list-wrapper">
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Фитнес-браслеты </a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Квадрокоптеры</a>
-                  </li>
+                  <ul class="catalog-list-wrapper">
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -269,63 +276,70 @@
                         <img class="product-card-image" src="img/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
                         <span class="product-card-price">500 ₽</span>
-                        <a class="product-card-button" href="#">Подробнее</a>
                       </a>
+                      <a class="product-card-button" href="#">Подробнее</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-3.jpg" width="360" height="380" alt="Профессиональная селфи-палка»">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                         <span class="product-card-price">1 500 ₽</span>
-                        <a class="product-card-button" href="#">Подробнее</a>
                       </a>
+                      <a class="product-card-button" href="#">Подробнее</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-4.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                        <span class="product-card-price">2 500 ₽</span>
-                        <a class="product-card-button" href="#">Подробнее</a>
+                        <span 
+                        class="product-card-price">2 500 ₽</span>
                       </a>
+                      <a class="product-card-button" href="#">Подробнее</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-title-link" href="#">
                         <img class="product-card-image" src="img/product-5.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                         <span class="product-card-price">1 500 ₽</span>
-                        <a class="product-card-button" href="#">Подробнее</a>
                       </a>
+                      <a class="product-card-button" href="#">Подробнее</a>
                     </li>
                   </ul>
                   <button class="pagination-button" type="button">Загрузить ещё</button>
                   <!-- Пагинация -->
                   <ul class="pagination">
                     <li>
-                      <li class="pagination-item">
-                        <a class="pagination-link pagination-prev" href="#"> Назад </a>
-                      </li>
+                      <ul class="pagination-wrapper">
+                        <li class="pagination-item">
+                          <a class="pagination-link pagination-prev" href="#"> Назад </a>
+                        </li>
+                      </ul>
                     </li>
-                    <li class="pagination-number">
+                    <li>
+                      <ul class="pagination-wrapper pagination-wrapper-flex">
                         <li class="pagination-item paginattion-item-number">
-                        <a class="pagination-link" href="#">1</a>
-                      </li>
-                      <li class="pagination-item paginattion-item-number">
-                        <a class="pagination-link" href="#">2</a>
-                      </li>
-                      <li class="pagination-item paginattion-item-number">
-                        <a class="pagination-link" href="#">3</a>
-                      </li>
-                      <li class="pagination-item paginattion-item-number">
-                        <a class="pagination-link" href="#">...</a>
-                      </li>
-                      <li class="pagination-item paginattion-item-number">
-                        <a class="pagination-link" href="#">15</a>
-                      </li>
+                          <a class="pagination-link" href="#">1</a>
+                        </li>
+                        <li class="pagination-item paginattion-item-number">
+                          <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-item paginattion-item-number">
+                          <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="pagination-item paginattion-item-number">
+                          <a class="pagination-link" href="#">...</a>
+                        </li>
+                        <li class="pagination-item paginattion-item-number">
+                          <a class="pagination-link" href="#">15</a>
+                        </li>
+                      </ul>
                    </li>
                     <li>
-                      <li class="pagination-item pagination-item-next">
-                      <a class="pagination-link pagination-next" href="#"> Вперёд </a>
-                    </li>
+                      <ul class="pagination-wrapper">
+                        <li class="pagination-item pagination-item-next">
+                        <a class="pagination-link pagination-next" href="#"> Вперёд </a>
+                       </li>
+                      </ul>
                     </li>
                   </ul>
               </div><!--products-margin-wrapper-->
