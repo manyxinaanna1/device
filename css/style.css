@@ -1538,12 +1538,7 @@
 }
 
 .product-card {
-    display: grid;
     position: relative;
-    grid-template-areas:
-        "image image"
-        "title price";
-    width: 360px;
 }
 
 .product-card-image {
@@ -1551,7 +1546,14 @@
     grid-area: image;
 }
 
-.product-card-title-link {
+.product-card-link {
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "title price";
+    column-gap: 70px;
+    align-items: center;
+    width: 360px;
     text-decoration: none;
 }
 
@@ -1595,12 +1597,12 @@
     letter-spacing: 0.2em;
 }
 
-.product-card-title-link:hover + .product-card-button,
-.product-card-title-link:active + .product-card-button{
+.product-card-link:hover + .product-card-button,
+.product-card-link:active + .product-card-button{
     display: block;
 }
 
-.product-card-title-link:focus {
+.product-card-link:focus {
     outline: 2px solid #AF4FFF;
 }
 
