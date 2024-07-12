@@ -499,6 +499,11 @@
 }
 
 /*Galery*/
+
+.page-main {
+    flex-grow: 1;
+}
+
 .page-main-index {
     display: grid; 
     row-gap: 70px;
