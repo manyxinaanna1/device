@@ -904,6 +904,21 @@
     line-height: 50px;
 }
 
+.about-title-line {
+    position: relative;
+}
+
+.about-title-line::before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 0;
+    display: block;
+    width: 84px;
+    height: 7px;
+    color: #000000;
+}
+
 .about-subtitle {
     margin-top: 0;
     margin-bottom: 15px;
