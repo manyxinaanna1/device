@@ -529,14 +529,19 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    counter-reset: galery-list 01;
 }
 
 .galery-item {
-    display: none;
+    counter-increment: galery-list 1;
 }
 
-.galery-item-current{
-    display: block;
+.galery-item::before {
+    content: " 0'counter(galery-list)'";
+}
+
+.galery-item-none {
+    display: none;
 }
 
 .galery-grid-wrapper {
