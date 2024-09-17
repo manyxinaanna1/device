@@ -529,15 +529,15 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    counter-reset: galery-list 0;
+    counter-reset: slider 0;
 }
 
 .galery-item {
-    counter-increment: galery-list 1;
+    counter-increment: slider 1;
 }
 
 .galery-item::before {
-    content: " 0'counter(section)'";
+    content: " 0'counter(slider)'";
 }
 
 .galery-item-none {
