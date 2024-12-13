@@ -541,13 +541,18 @@
     position: absolute;
     top: 0;
     right: 0;
-    content: counter(slider, decimal-leading-zero);
-    
     display: block;
+    margin-top: -56px;
+    padding-right: 49px;
+    min-height: 79px;
+    width: 100%;
+    text-align: right;
+    font-size: 217px;
     color: white;
     background-color: #FFE17F;
-    min-height: 79px;
+    content: counter(slider, decimal-leading-zero);
 }
+
 
 .galery-item-none {
     display: none;
@@ -559,7 +564,6 @@
     display: grid;
     grid-template-columns: 560px 1fr;
     gap: 40px;
-    margin-top: -100px;
 }
 
 .gallery-image-wrapper {
