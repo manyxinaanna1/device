@@ -110,7 +110,7 @@
 .header-logo-wrapper {
     padding-left: 60px;
     padding-top: 10px;
-    background: linear-gradient(#ffffff 50%, #ffe17f 50%);
+    background: linear-gradient(#ffffff 66%, #ffe17f 50%);
 }
 
 .search-form {
@@ -272,9 +272,9 @@
     display: grid;
     grid-template-columns: 570px 1fr;
     width: 1040px;
-    margin: -12px auto 0 auto;
+    margin: -18px auto 0 auto;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .catalog {
