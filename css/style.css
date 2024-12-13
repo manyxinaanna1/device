@@ -537,7 +537,7 @@
 }
 
 .galery-item::before {
-    content: " 0'counter(slider)'";
+    content: counter(slider);
 }
 
 .galery-item-none {
