@@ -533,11 +533,20 @@
 }
 
 .galery-item {
+    position: relative;
     counter-increment: slider 1;
 }
 
 .galery-item::before {
-    content: counter(slider);
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: counter(slider, decimal-leading-zero);
+    
+    display: block;
+    color: white;
+    background-color: #FFE17F;
+    min-height: 79px;
 }
 
 .galery-item-none {
