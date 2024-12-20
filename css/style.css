@@ -763,8 +763,9 @@
 
 /*Delivery*/
 .delivery {
-    margin-top: 7px;
+    margin-top: 17px;
     margin-bottom: 85px;
+    padding-left: 14px;
     background: linear-gradient(#ffffff 33%, #F0F0F0 0%);
 }
 
@@ -829,7 +830,7 @@
 }
 
 .delivery-paragraph {
-    width: 448px;
+    width: 450px;
     font-size: 18px;
     line-height: 30px;
     color: #444;
