@@ -269,6 +269,7 @@
 
 .header-navigation-wrapper {
     position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 570px 1fr;
     width: 1040px;
@@ -544,10 +545,10 @@
     display: block;
     margin-top: -56px;
     padding-right: 49px;
-    min-height: 79px;
+    height: 172px;
     width: 100%;
     text-align: right;
-    font-size: 217px;
+    font-size: 183px;
     color: white;
     background-color: #FFE17F;
     content: counter(slider, decimal-leading-zero);
@@ -560,7 +561,7 @@
 
 .galery-grid-wrapper {
     position: relative;
-    z-index: 1;
+    
     display: grid;
     grid-template-columns: 560px 1fr;
     gap: 40px;
@@ -568,14 +569,14 @@
 
 .gallery-image-wrapper {
     position: relative;
-    margin-top: -80px;
+    margin-top: -34px;
     width: 560px;
     display: block;
 }
 
 .gallery-image {
     position: relative;
-    z-index: 1;
+    
     display: block;
 }
 
@@ -610,7 +611,7 @@
 }
 
 .promo-text {
-    margin-top: 44px;
+    margin-top: 86px;
     margin-bottom: 29px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
