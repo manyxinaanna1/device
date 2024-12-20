@@ -1253,7 +1253,7 @@
 
 .inner-header-title {
     margin-top: 35px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -1318,14 +1318,14 @@
 }
 
 .catalog-title-filter {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 
 .catalog-filter-subtitle {
     display: block;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     padding-top: 12px;
     font-weight: 700;
     font-size: 18px;
@@ -1342,7 +1342,7 @@
 .range-scale {
     position: relative;
     height: 4px;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
     background-color: #DCDCDC;
 }
 
